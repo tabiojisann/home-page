@@ -1,0 +1,221 @@
+//header----------------------------------------------------
+
+.header {
+  height: 70px;
+  width: 100%;
+  background-color: rgb(209, 233, 250);
+  display: flex;
+  justify-content: space-between;
+  
+  &__title {
+    line-height: 70px;
+    margin-left: 10px;
+    
+    &--text {
+      text-decoration: none;
+      color: navy;
+      font-size: 45px;
+      font-style: oblique;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 1s linear 0s;
+      display: block;
+    
+      &:hover {
+        transform: rotateX(360deg);
+      }
+    } 
+  }
+
+  &__right {
+    margin-right: 10px;
+    line-height: 60px;
+    display: flex;
+    padding: 8px;
+
+    &--in {
+     display: block;
+     text-decoration: none;
+     border: solid 2px violet;
+     color: rgb(6, 31, 141);
+     background-color: white;
+     margin-right: 5px;
+     font-style: italic;
+     font-weight: bold;
+     font-size: 20px;
+    //  border-radius: 20px;
+     box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
+     display: inline-block;
+     cursor: pointer;
+     transition: all 0.3s ease 0s;
+    
+     &:hover {
+      box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25);
+      transform: translateY(-0.1875em);
+     }}
+    &--up{
+     display: block;
+     text-decoration: none;
+     border: solid 2px violet;
+     color: white;
+     background-color: black;
+     margin-right: 5px;
+     font-style: italic;
+     font-weight: bold;
+     font-size: 20px;
+    //  border-radius: 20px;
+     box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
+     display: inline-block;
+     cursor: pointer;
+     transition: all 0.3s ease 0s;
+      &:hover {
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25);
+        transform: translateY(-0.1875em);
+      }
+    }
+  }
+}
+
+//header---------------------------------------------------
+
+//body-----------------------------------------------------
+
+.contents {
+  height: 200vh;
+  width: 100%;
+  background-color: lightcyan;
+  position: relative;
+
+
+  .main {
+    position: absolute;
+      top: 15%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
+
+  .main-heading {
+    color: #777;
+    text-transform: uppercase;
+  }
+
+  .main-heading-primary {
+    display: block;
+    font-size: 5.0rem;
+    font-weight: 400;
+    letter-spacing: 35px;
+    animation: moveInLeft 1s ease-out;
+  }
+
+  .main-heading-secondary {
+    font-family: sans-serif;
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 31px;
+    color: hotpink;
+    animation: moveInRight 1s ease-out;
+  }
+
+  @keyframes moveInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-100px);
+    }
+    
+    80% {
+      transform: translateX(10px);
+    }
+    
+    100% {
+      opacity: 1;
+      transform: translate(0);
+    }
+  }
+
+  @keyframes moveInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+    
+    80% {
+      transform: translateX(-10px);
+    }
+    
+    100% {
+      opacity: 1;
+      transform: translate(0);
+    }
+  }
+
+  .content {
+    height: 900px;
+    width: 85%;
+    background-color: blanchedalmond;
+    position: absolute;
+    top: 30%;
+    left: 8%;
+    h1 {
+      text-align: center;
+      font-size: 35px;
+      margin-top: 70px;
+      font-weight: bold;
+      font-style: italic;
+      color: deeppink;
+    }
+    p {
+      color: deeppink;
+    }
+  }
+
+
+}
+
+
+//body-----------------------------------------------------
+
+
+
+
+
+
+
+
+//footer------------------------------------------------
+
+.footer {
+  height: 50px;
+  width: 100%;
+  background-color: rgb(209, 233, 250);
+  position: absolute;
+  bottom: 0;
+  position: fixed;
+
+  ul {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    line-height: 50px;
+    
+
+    li {
+      text-decoration: none;
+      color: navy;
+      font-size: 15px;
+      font-weight: bold;
+      font-style: italic;
+      cursor: pointer;
+      transition: all 0.5s ease 0s;
+        &:hover {
+          color: #4CAF50;
+        }
+    }
+  }
+}
+
+
+
+//footer------------------------------------------------
+

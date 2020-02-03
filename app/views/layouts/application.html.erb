@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HomePage</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__title">
+        <%= link_to "MY HOME PAGE", "#", class: "header__title--text" %>
+      </div>
+      <div class="header__right">
+        <%= link_to "ログイン", "#", class: "header__right--in" %>
+        <%= link_to "新規登録", "#", class: "header__right--up" %> 
+      </div>
+    </header>
+    <div class="contents">
+    <%= yield %>
+    </div>
+  </body>
+</html>
