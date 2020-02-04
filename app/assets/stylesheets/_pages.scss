@@ -54,7 +54,8 @@
       box-shadow: 0 0 10px 0 blue;
       background: black;
       color: white;
-     }}
+     }
+    }
     &--up{
      padding: 15px;
      display: block;
@@ -76,6 +77,29 @@
         background: white;
         color: black;
       }
+    }
+    &--out{
+     padding: 15px;
+     display: block;
+     text-decoration: none;
+     border: solid 0.5px blue;
+     color: black;
+     background-color: white;
+     margin-right: 5px;
+     font-style: italic;
+     font-weight: bold;
+     font-size: 20px;
+    //  border-radius: 20px;
+     box-shadow: 0 0 12px 0 blue;
+     display: inline-block;
+     cursor: pointer;
+     transition: all 0.3s ease 0.05s;
+    
+     &:hover {
+      box-shadow: 0 0 10px 0 blue;
+      background: black;
+      color: white;
+     }
     }
   }
 }
