@@ -1,3 +1,7 @@
+<% if user_signed_in? %>
+  <%= render partial: "page" %>
+  <%# <%= render @pages %> 
+<% else %>
 <div class="main">
   <h1 class="main-heading">
     <span class="main-heading-primary">WELCOME</span>
@@ -12,12 +16,13 @@
   <p>このサイトは自分でWEBページが作れます！</p>
   <p>あなただけのホームページを作ってみましょう！！</p>
   <p>まずはユーザー登録を行ってください</p>
-  
+
   <div class="content__sign">
     <%= link_to "さっそくホームページを作る", new_user_registration_path, class: "content__sign--btn" %>
   </div>
-  
+
 </div>
+<% end %>
 
 
 

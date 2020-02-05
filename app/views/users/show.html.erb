@@ -1,0 +1,22 @@
+<div class="my-page">
+  <p><%= @user.name%>の部屋</p>
+  
+  
+  <div class="my-page__myself">
+
+    <div class="my-page__myself__list">
+      <%= link_to "#{@user.name}のプロフィール", "#", class: "my-page__myself__list--btn" %>
+    </div>
+
+    <div class="my-page__myself__list">  
+      <%= link_to "#{@user.name}のにっき", root_path, class: "my-page__myself__list--btn" %>
+    </div> 
+
+    <div class="my-page__myself__list"> 
+      <%= link_to "#{@user.name}のりぁる", root_path, class: "my-page__myself__list--btn" %>
+    </div>  
+
+  </div>
+
+
+<div>

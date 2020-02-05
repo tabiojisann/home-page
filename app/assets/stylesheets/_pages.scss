@@ -275,3 +275,50 @@
 
 //footer------------------------------------------------
 
+
+
+//user.page---------------------------------------------
+
+.mother {
+  height: 100%;
+  width: 100%;
+  background-color: #f8c8e2;
+
+  &__welcome {
+    text-align: center;
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 85px;
+    color: rgb(16, 183, 212);
+    padding-top: 150px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+  }
+  &__choice {
+    margin-top: 100px;
+
+    .choose {
+      text-decoration: none;
+      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.25);
+      background-color: rgb(15, 72, 226);
+      color: #fff;
+      display: inline-block;
+      padding: 0.6em 2em;
+      margin-top: 100px;
+      margin-left: 500px;
+      cursor: pointer;
+      transition: all 0.3s ease 0s;
+
+      &:hover {
+        box-shadow: 0 18px 10px 0 rgba(0, 0, 0, 0.25);
+        transform: translateY(-0.1875em);
+      }
+    }
+  }
+}
+
+
+
+
+
+
+//user.page---------------------------------------------
