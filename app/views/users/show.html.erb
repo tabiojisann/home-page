@@ -5,15 +5,15 @@
   <div class="my-page__myself">
 
     <div class="my-page__myself__list">
-      <%= link_to "#{@user.name}のプロフィール", "#", class: "my-page__myself__list--btn" %>
+      <%= link_to "#{@user.name}のプロフィール", edit_user_path, class: "my-page__myself__list--btn" %>
     </div>
 
     <div class="my-page__myself__list">  
-      <%= link_to "#{@user.name}のにっき", root_path, class: "my-page__myself__list--btn" %>
+      <%= link_to "#{@user.name}のにっき", "/users/#{current_user.id}/posts" , class: "my-page__myself__list--btn" %>
     </div> 
 
     <div class="my-page__myself__list"> 
-      <%= link_to "#{@user.name}のりぁる", root_path, class: "my-page__myself__list--btn" %>
+      <%= link_to "#{@user.name}のりぁる", "/users/#{current_user.id}/tweets", class: "my-page__myself__list--btn" %>
     </div>  
 
   </div>
