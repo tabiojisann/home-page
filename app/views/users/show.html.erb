@@ -3,18 +3,74 @@
   
   
   <div class="my-page__myself">
+  
+    <div class="my-page__myself__real">
 
-    <div class="my-page__myself__list">
-      <%= link_to "#{@user.name}のプロフィール", edit_user_path, class: "my-page__myself__list--btn" %>
-    </div>
+      <div class="my-page__myself____real__list">  
+        <%= link_to "#{@user.name}のにっき", "/users/#{current_user.id}/posts" , class: "my-page__myself__real__list--btn" %>
+      </div> 
 
-    <div class="my-page__myself__list">  
-      <%= link_to "#{@user.name}のにっき", "/users/#{current_user.id}/posts" , class: "my-page__myself__list--btn" %>
-    </div> 
+      <div class="my-page__myself__real__list"> 
+        <%= link_to "#{@user.name}のりぁる", "/users/#{current_user.id}/tweets", class: "my-page__myself__real__list--btn" %>
+      </div> 
 
-    <div class="my-page__myself__list"> 
-      <%= link_to "#{@user.name}のりぁる", "/users/#{current_user.id}/tweets", class: "my-page__myself__list--btn" %>
+    </div>   
+
+    <div class="my-page__myself__prof">
+    
+      <div class="my-page__myself__prof__title">
+        <%= link_to "#{@user.name}のぷろふぃーる", edit_user_path, class: "my-page__myself__prof__title--btn" %>
+      </div>
+
+      <div class="my-page__myself__prof__title"><%= @user.image %></div>
+      
+
+      <div class="my-page__myself__prof__list">
+        <a>名前</a>
+      </div>
+        <div class="my-page__myself__prof__text"><%= @user.name %></div>
+
+      <div class="my-page__myself__prof__list">
+        <dl>性別</dl>
+      </div>
+        <div class="my-page__myself__prof__text"><%= @user.sex %></div>
+
+      <div class="my-page__myself__prof__list">
+        <dl>年齢</dl>
+      </div>
+        <div class="my-page__myself__prof__text"><%= @user.age %></div>
+
+      <div class="my-page__myself__prof__list">
+        <dl>職業</dl>
+      </div>
+        <div class="my-page__myself__prof__text"><%= @user.job %></div>
+
+      <div class="my-page__myself__prof__list">
+        <dl>身長</dl>
+      </div>
+        <div class="my-page__myself__prof__text"><%= @user.tall %></div>
+
+      <div class="my-page__myself__prof__list">
+        <dl>体重</dl>
+      </div>
+        <div class="my-page__myself__prof__text"><%= @user.weight %></div>
+
+      <div class="my-page__myself__prof__list">
+        <dl>ここだけの話</dl>
+      </div>
+
+        <div class="my-page__myself__prof__text"><%= @user.secret %></div>
+      <div class="my-page__myself__prof__list">
+      </div>  
+
+      <div class="my-page__myself__prof__edit">
+        <%= link_to "プロフィールを変える？", edit_user_path, class: "my-page__myself__prof__edit--btn" %>
+      </div>
+
+
     </div>  
+
+   
 
   </div>
 

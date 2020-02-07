@@ -1,1 +1,8 @@
-ここはあなたのプロフィールを編集する場所だよ！
+<div class="edit">
+  <div class="edit__content">
+    <div class="edit__content__title"><span style="color:deeppink"><%= @user.name %></span>のぷろふぃーる</div>
+    <%# <div class="edit__content__list"> %>
+      <%= render partial: "form" %>
+    <%# </div> %>
+  </div>
+</div>

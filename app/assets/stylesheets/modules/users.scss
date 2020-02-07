@@ -1,0 +1,228 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.user {
+  height: 100%;
+  width: 100%;
+  background-color:#f7f0be;
+}
+
+h2 {
+  text-align: center;
+  font-size: 28px;
+  font-style: italic;
+  font-weight: bold;
+  color: rgba(241, 81, 81, 0.856);
+}
+
+.field {
+  text-align: center;
+  font-size: 25px;
+  margin-top: 50px;
+}
+
+.actions {
+text-align: center;
+padding: 30px;
+
+}
+
+
+
+a {
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  color: rgba(27, 10, 175, 0.753);
+
+}
+
+input[type="submit"] {
+
+  background-color: lightcyan;
+  border-radius: 20px;
+  color: palevioletred;
+  border: 0;
+  font-size: 30px;
+  padding: 0 80px;
+  cursor: pointer;
+  border-bottom: 0.1875em solid rgb(177, 243, 255);
+  transition: all 0.6s ease 0s;
+
+  &:hover {
+    color: red;
+    background-color: lighten(gold, 10%);
+    border-bottom-color: transparent;
+    transform: translateY(0.1875em);
+  }
+  
+}
+
+
+
+
+//ログイン前---------------------------------------------------
+
+//ログイン後---------------------------------------------------
+.my-page {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+
+  p {
+    text-align: center;
+    font-size: 60px;
+    font-style: oblique;
+    font-weight: 550;
+    color: rgb(3, 217, 255);
+    margin-top: 100px;
+  }
+  &__myself {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 25px;
+    font-style: italic;
+    
+    &__real{
+      display: flex;
+      margin-left: 470px;
+      
+      &__list {
+      margin-left: 40px;
+      margin-bottom: 30px;
+        
+        &--btn {
+          color: rgb(219, 22, 236);
+          text-decoration: none;
+          cursor: pointer;
+        }
+      }
+    }
+
+    &__prof {
+      height: 3000px;
+      width: 80%;
+      background-color: deeppink;
+      // background-color: aquamarine;
+      margin: 0 auto;
+      &__title {
+        padding-top: 40px;
+        &--btn {
+          color: deepskyblue;
+          text-decoration: none;
+          cursor: pointer;
+        }
+      }
+      &__list {
+        height: 50px;
+        width: 100%;
+        background-color: pink;
+        margin-top: 160px;
+        
+      }
+
+      &__text {
+        margin-top: 40px;
+        color: white;
+        font-size: 30px;
+      }
+
+      &__edit {
+        margin-top: 80px;
+      
+        &--btn {
+          display: inline-block;
+          position: relative;
+          text-decoration: none;
+          color: rgb(55, 0, 255);
+         
+          
+
+          &::after {
+            position: absolute;
+            content: '';
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 1px;
+            // background: rgb(26, 250, 250);
+            border-bottom: 6px solid greenyellow;
+            transition: all 0.4s ease 0.2s;
+          }
+
+          &:hover {
+            cursor: pointer;
+            opacity: 0.7;
+        
+          &:hover::after{
+            width: 100%;
+            
+          }
+          }  
+        }
+      }
+    }
+  }
+}
+  
+
+
+ 
+//   &--btn {
+//     color: rgb(219, 22, 236);
+//     text-decoration: none;
+//     cursor: pointer;
+
+.edit {
+  height: 3000px;
+  width: 100%;
+  // background-color: magenta;
+  background-color: deeppink;
+  position: relative;
+  display: flex;
+  justify-content: center; /*左右中央揃え*/
+  align-items: center;
+ 
+  &__content {
+    height: 85%;
+    width: 80%;
+    background-color: midnightblue;
+    margin: 0 auto;
+    &__title {
+    color: mintcream;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+    }
+
+    &__list{
+
+      &__text {
+        margin-top: 40px;
+        color: white;
+        font-size: 30px;
+        float: right;
+      }
+    }
+  }
+}
+
+.edit-list {
+  height: 50px;
+  margin-left: 35px;
+  margin-top: 40px;
+  display: block;
+}
+
+#user_text {
+  height: 40px;
+  width: 230px;
+  margin-top: 150px;
+  margin-left: 40px;
+}
+
+
+
+
