@@ -121,7 +121,7 @@ h1,h2,h3,h4,h5,h6 {
 header.header {
   @include basePadding;
   border-bottom: 1px solid $gray;
-  background-color: #fff;
+  background-color: rgb(209, 228, 252);
   position: fixed;
   top: 0;
   left: 0;
@@ -210,7 +210,13 @@ header.header {
     right: 0;
   }
 }
+
+.tweets {
+  background-color: $black;
+}
+
 div.contents.row {
+   
   h2 {
     @include boxBase(20px 0, 0);
     font-weight: normal;
@@ -226,9 +232,10 @@ div.contents.row {
   div.content_post {
     @include boxBase(20px 0 ,30px);
     position: relative;
-    height: 400px;
+    height: 100px;
     color: #fff;
-    background-size: cover;
+    background-color: red;
+    // background-size: cover;
     background-position: center center;
     border-radius: 3px;
     box-shadow: 0 0 10px rgba($black,0.2);
@@ -239,7 +246,7 @@ div.contents.row {
       bottom: 0;
       left: 0;
       right: 0;
-      @include filter-gradient(#000000, #a60000, vertical);
+      @include filter-gradient(#301c1c, #a60000, vertical);
       @include background-image(linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 62%,rgba(0,0,0,0.85) 100%));
       z-index: 1;
       border-radius: 3px;
@@ -283,6 +290,7 @@ div.contents.row {
         }
       }
     }
+  
     p {
       @extend .serif;
       position: absolute;
@@ -334,6 +342,11 @@ form {
     font-size: 20px;
     color: $dark;
   }
+
+  label {
+    color: deepskyblue;
+  }
+
   input,textarea {
     width: 100%;
     @include boxBase(5px 0 15px,10px);
@@ -345,9 +358,13 @@ form {
     @extend .transition;
     background-color: $accent;
     border-radius: 20px;
+    width: 35%;
     color: #fff;
     border: 0;
-    font-size: 18px;
+    font-size: 20px;
+    display: block;
+    margin: 0 auto;
+
     &:hover {
       background-color: lighten($accent, 10%);
     }
@@ -389,4 +406,27 @@ footer {
   .search-btn {
     width: 10%;
   }
+}
+
+.pagination {
+  display: flex;
+  
+  display: inline-flexbox;
+  justify-content: center;
+}
+
+.page {
+  margin-right: 10px;
+}
+.next {
+  margin-right: 10px;
+}
+.last {
+  margin-right: 10px;
+}
+.first {
+  margin-right: 10px;
+}
+.prev {
+  margin-right: 10px;
 }
