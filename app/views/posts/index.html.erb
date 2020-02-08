@@ -1,2 +1,44 @@
+
 <div class="posts">
+ 
+  <div class="posts__content">
+     
+
+    <%= link_to "新規投稿", new_post_path, class: "posts__content__new-btn" %>
+      <% @posts.each do |post| %>
+    <div class="posts__content__list">
+
+      <div class="posts__content__list__top">
+        <div class="posts__content__list--title">
+        <%= link_to post.title, post_path(post.id), class: "posts__content__list--title--btn" %>
+
+        <span><%= image_tag 'arrow_top.png' %></span>
+          <li>
+          
+            <%= link_to '削除', post_path(post.id), method: :delete %>
+          </li>
+          
+    
+    
+        </div>
+      </div> 
+
+      <div class="posts__content__list__bottom">  
+        <div class="posts__content__list--date">
+        <%= post.created_at %>
+        </div>
+      </div>
+
+    </div>  
+    
+ 　<% end %>
+
+    
+  </div>
+     
+ 
+ 
 </div>
+
+
+
