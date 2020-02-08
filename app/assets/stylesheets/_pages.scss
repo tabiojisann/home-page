@@ -111,7 +111,11 @@
 .contents {
   height: 200vh;
   width: 100%;
-  background-color: lightcyan;
+  // background-color: lightcyan;
+  background-image: url(https://cdn.pixabay.com/photo/2016/06/22/11/10/box-1472804_1280.png);
+  // background-size: 100% 100%;
+  background-size: cover;
+  // background-position: center;
   position: relative;
 
 
@@ -123,7 +127,7 @@
   }
 
   .main-heading {
-    color: #777;
+    color:rgb(36, 176, 241);
     text-transform: uppercase;
   }
 
@@ -142,7 +146,7 @@
     font-weight: bold;
     text-align: center;
     letter-spacing: 31px;
-    color: hotpink;
+    color: deeppink;
     animation: moveInRight 1s ease-out;
   }
 
@@ -200,6 +204,7 @@
       font-size: 31px;
       font-weight: bold;
       line-height: 30px;
+      margin-left: 70px;
     }
     &__sign {
       text-align: center;
