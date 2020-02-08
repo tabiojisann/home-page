@@ -34,7 +34,8 @@
     padding: 8px;
 
     &--in {
-     padding: 15px;
+      height: 40px;
+      padding: 10px;
      display: block;
      text-decoration: none;
      border: solid 0.5px blue;
@@ -57,7 +58,8 @@
      }
     }
     &--up{
-     padding: 15px;
+     height: 40px;
+     padding: 10px;
      display: block;
      text-decoration: none;
      border: solid 0.5px red;
@@ -79,7 +81,8 @@
       }
     }
     &--out{
-     padding: 15px;
+     height: 40px;
+     padding: 10px;
      display: block;
      text-decoration: none;
      border: solid 0.5px blue;
@@ -251,7 +254,7 @@
   width: 100%;
   background-color: rgb(209, 233, 250);
   position: absolute;
-  bottom: 0;
+  top: 98%;
   // position: fixed;
 
   ul {
