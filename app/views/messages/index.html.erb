@@ -1,10 +1,10 @@
 <div class="messages">
-
+ <%= link_to  messages_path, method: :delete do %> 
+      <i class="fa fa-remove"></i>
+     <% end %> 
   <div class="messages__content">
   
-     <%= link_to  messages_path, method: :delete do %> 
-      <i class="fa fa-remove"></i>
-     <% end %>     
+        
     <div class="messages__content__message">
     
       <%# <% if @message.content.present? %>
@@ -14,22 +14,18 @@
 
       <% @messages.each do |message| %>
 
-         <p class="message_name"><%= message.user.name%></p>
+         <p class="messages__content__message__name"><%= message.user.name%></p>
 
-         <p class="message"><%= message.content %><br></p>
+         <p class="messages__content__message__text"><%= message.content %><br></p>
          
         <% if @message.image.present? %>
             <%= @message.image %>
         <% end %>   
        
       <% end %>  
-      
+    </div>  
 
   </div>
-
-
-
-
 
 
 
