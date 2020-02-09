@@ -1,8 +1,8 @@
 .messages {
   height: 100%;
   width: 100%;
-  // background-color: ghostwhite;
-  background-image: url(https://cdn.pixabay.com/photo/2017/12/09/21/33/sunset-3008779_1280.jpg);
+  background-color: ghostwhite;
+  // background-image: url(https://cdn.pixabay.com/photo/2017/12/09/21/33/sunset-3008779_1280.jpg);
   background-size: cover;
   position: relative;
   // display: flex;
@@ -11,50 +11,54 @@
 
   &__content {
     // height: 65%;
-    height: 30%;
+    height: 28%;
     width: 70%;
     background-color: white;
     margin: 0 auto;
     box-shadow: 0 0 50px navy;
     overflow: scroll;
 
-    &__name {
-      height: 30px;
-      width: 100%;
-      font-size: large;
-    }
+   
 
     &__message {
       height: 50px;
       width: 100%;
       margin-top: 15px;
-    }}
+      
+
+      &__name {
+        height: 30px;
+        width: 100%;
+        font-size: large;
+        margin-top: 30px;
+        margin-left: 20px;
+        font-weight: bold;
+        font-size: 20px;
+        color: deeppink;
+        overflow: hidden;
+        box-shadow: 0 0 14px deepskyblue;
+      }
+
+      &__text {
+        margin-top: 30px;
+        margin-left: 20px;
+        font-weight: bold;
+      }
+    }
+  }
   
   &__form {
     position: absolute;
-    top: 30%;
+    top: 32%;
+    left: 30%;
     display: flex;
     box-shadow: 0 0 10px black;
 
   }
-}
 
-.message_name {
-  margin-top: 30px;
-  margin-left: 20px;
-  font-weight: bold;
-  font-size: 20px;
-  color: deeppink;
-  overflow: hidden;
-  box-shadow: 0 0 14px deepskyblue;
-}
 
-.message {
-  margin-top: 30px;
-  margin-left: 20px;
-  font-weight: bold;
-}
 
-i {
-  color: red;
+  i {
+    color: red;
+  }
 }

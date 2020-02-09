@@ -25,9 +25,4 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
-<<<<<<< Updated upstream
 public/uploads/*
-=======
-public/uploads/*
-
->>>>>>> Stashed changes
