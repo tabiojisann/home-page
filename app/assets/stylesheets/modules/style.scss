@@ -39,12 +39,12 @@ $white: white;
 
 body,html {
   height: 100%;
-  background-color: $lightGray;
+  background-color: white;
 }
 
-body {
-  padding-top: 60px;
-}
+// body {
+//   padding-top: 60px;
+// }
 
 h1,h2,h3,h4,h5,h6,body {
 line-height: 1.57;
@@ -371,7 +371,7 @@ form {
   }
 }
 .container {
-  @include boxBase(20px 0 ,30px);
+  // @include boxBase(20px 0 ,30px);
   box-shadow: 0 0 10px rgba($black,0.2);
   background-color: $white;
   box-sizing: border-box;
@@ -388,7 +388,7 @@ form {
 }
 
 footer {
-  @include boxBase;
+  // @include boxBase;
   color: $gray;
   p {
     text-align: center;
