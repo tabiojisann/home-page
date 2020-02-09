@@ -1,0 +1,56 @@
+<div class="messages">
+
+  <div class="messages__content">
+  
+     <%= link_to '削除', messages_path, method: :delete %>      
+    <div class="messages__content__message">
+    
+      <%# <% if @message.content.present? %>
+       <%# <%= @message.content %>   
+      <%# <%= image_tag @message.image.url, class: 'messages__content__image' if message.image.present? %> 
+      <%# <% end %> 
+
+      <% @messages.each do |message| %>
+
+         <p class="message_name"><%= message.user.name%></p>
+
+         <p class="message"><%= message.content %><br></p>
+         
+        <% if @message.image.present? %>
+            <%= @message.image %>
+        <% end %>   
+       
+      <% end %>   
+
+  </div>
+
+
+
+
+
+
+
+  <div class="messages__form">
+
+    <div class="message">
+      <%= form_with model: @message, class: :message__btn, local: true do |form| %>
+        <%= form.text_field :content, placeholder: :メッセージを入力, class: :message__text %>
+          <%= form.label :image, class: :message__image do %>
+            <%= icon('fas', 'image', class: :'message__icon') %>
+            <%= form.file_field :image, class: :'message__hidden' %>
+          <% end %>
+        <%= form.submit '送信', class: :message__submit %>
+      <% end %>
+    </div>
+
+    <div class="my-page__myself__prof__edit">
+    <%= link_to "戻る", "/users/#{current_user.id}", class: "my-page__myself__prof__edit--btn" %>
+    </div>
+
+  </div>
+
+     
+</div>
+
+
+
