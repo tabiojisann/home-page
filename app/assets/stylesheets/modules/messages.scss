@@ -11,12 +11,15 @@
 
   &__content {
     // height: 65%;
-    height: 28%;
-    width: 70%;
+    height: 40%;
+    width: 50%;
     background-color: white;
     margin: 0 auto;
     box-shadow: 0 0 50px navy;
     overflow: scroll;
+    position: absolute;
+    top: 10%;
+    right: 5%;
 
    
 
@@ -49,8 +52,8 @@
   
   &__form {
     position: absolute;
-    top: 32%;
-    left: 30%;
+    top: 20%;
+    left: 1%;
     display: flex;
     box-shadow: 0 0 10px black;
 
