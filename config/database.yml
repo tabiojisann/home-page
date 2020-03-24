@@ -48,7 +48,11 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
-  <<: *default
-  database: home-page_production
+  # <<: *default
+  apdater: pg
+  enconfig: unicode
+  pool: 5
+  database: db/production.pg
+  # database: home-page_production
   username: home-page
   password: <%= ENV['HOME-PAGE_DATABASE_PASSWORD'] %>

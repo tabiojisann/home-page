@@ -19,5 +19,6 @@ module HomePage
     # the framework and any gems in your application.
 
     config.generators.javascript_engine = :js
+    config.assets.initialize_on_precompile = false
   end
 end

@@ -1,5 +1,6 @@
 
 <div class="posts">
+ <%= link_to "戻る", "/users/#{current_user.id}", class: "my-page__myself__prof__edit--btn" %>
  
   <div class="posts__content">
      
@@ -12,11 +13,9 @@
         <div class="posts__content__list--title">
         <%= link_to post.title, post_path(post.id), class: "posts__content__list--title--btn" %>
 
-        <span><%= image_tag 'arrow_top.png' %></span>
-          <li>
-          
-            <%= link_to '削除', post_path(post.id), method: :delete %>
-          </li>
+        <%= link_to  post_path(post.id), method: :delete do %> 
+          <i class="fa fa-remove"></i>
+        <% end %> 
           
     
     

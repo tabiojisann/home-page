@@ -1,22 +1,41 @@
-<div class="my-page">
-  <p><%= @user.name%>の部屋</p>
+<div class="my-page" id="back">
+  
+  <p><%= @user.name %>の部屋</p>
+  
+  <button id="button1">赤</button>
+  <button id="button2">青</button>
+  <button id="button3">黄色</button>
+  <button id="button4">白</button>
+  <button id="button5">黒</button>
+  <button id="button6">森林</button>
+  <button id="button7">夕暮れ</button>
+  <button id="button8">ホラー</button>
+  <button id="button9">桜</button>
+  <button id="button10">アニメ</button>
+ 
+
   
   
   <div class="my-page__myself">
+    
   
     <div class="my-page__myself__real">
+    
 
-      <div class="my-page__myself____real__list">  
+      <div class="my-page__myself____real__list" id="dialy">  
         <%= link_to "#{@user.name}のにっき", posts_path, class: "my-page__myself__real__list--btn" %>
       </div> 
 
-      <div class="my-page__myself__real__list"> 
+      <div class="my-page__myself__real__list" id="real"> 
         <%= link_to "#{@user.name}のりぁる", tweets_path, class: "my-page__myself__real__list--btn" %>
       </div> 
 
     </div>   
 
-    <div class="my-page__myself__prof">
+    <div class="my-page__myself__prof" id="prof">
+    <button id="button11">にっき</button>
+    <button id="button12">りぁる</button>
+    <button id="button13">プロフ</button>
     
       <div class="my-page__myself__prof__title">
         <%= link_to "#{@user.name}のぷろふぃーる", edit_user_path, class: "my-page__myself__prof__title--btn" %>

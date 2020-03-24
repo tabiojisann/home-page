@@ -1,4 +1,5 @@
 <div class="tweets">
+ <%= link_to "戻る", "/users/#{current_user.id}", class: "my-page__myself__prof__edit--btn" %>
   <div class="contents row">
     <% @tweets.each do |tweet| %>
       <div class="content_post" >
@@ -13,7 +14,7 @@
     <%= simple_format(tweet.text) %>
       </div>
     <% end %>
-    <%= link_to "新規投稿", new_tweet_path, class: "posts__content__new-btn" %>
+    <%= link_to "新規投稿", new_tweet_path, class: "new-btn" %>
     <%= paginate(@tweets) %>
   </div>
 </div>

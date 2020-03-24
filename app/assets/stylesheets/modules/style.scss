@@ -42,9 +42,9 @@ body,html {
   background-color: white;
 }
 
-// body {
-//   padding-top: 60px;
-// }
+body {
+  padding-top: 60px;
+}
 
 h1,h2,h3,h4,h5,h6,body {
 line-height: 1.57;
@@ -430,3 +430,27 @@ footer {
 .prev {
   margin-right: 10px;
 }
+
+.new-btn {
+
+      margin-left: 270px;
+      margin-top: 20px;
+      background: #03d9ff;
+      text-decoration: none;
+      color: snow;  
+      border-radius: 4px;
+      padding: 12px;
+      font-size: 25px;
+      font-weight: bold;
+      font-style: italic;
+      border-bottom: 0.1875em solid rgb(16, 183, 212);
+      display: inline-block;  
+      cursor: pointer;
+      transition: all 0.6s ease 0s;
+    
+      &:hover {
+        border-bottom-color: transparent;
+        transform: translateY(0.1875em);
+      }
+}
+
