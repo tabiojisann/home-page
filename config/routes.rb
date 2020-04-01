@@ -9,6 +9,9 @@ Rails.application.routes.draw do
   resources :messages, only: [:index, :create]
   delete :messages, to: 'messages#destroy_all'
 
+  
+    
+
 end
 
 
