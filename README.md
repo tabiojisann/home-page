@@ -3,9 +3,9 @@
 
 https://my-home-page-in-heroku.herokuapp.com/
 
-|トップページ|ユーザーページ|チャット|
-|---|---|---|
-|[![Image from Gyazo](https://i.gyazo.com/a63e4d18eb0da054fd17247b039231fa.gif)](https://gyazo.com/a63e4d18eb0da054fd17247b039231fa)|[![Image from Gyazo](https://i.gyazo.com/0f4ad400c9bd16feeea8c5501710ef12.gif)](https://gyazo.com/0f4ad400c9bd16feeea8c5501710ef12)||
+|トップページ|ユーザーページ|
+|---|---|
+|[![Image from Gyazo](https://i.gyazo.com/a63e4d18eb0da054fd17247b039231fa.gif)](https://gyazo.com/a63e4d18eb0da054fd17247b039231fa)|[![Image from Gyazo](https://i.gyazo.com/0f4ad400c9bd16feeea8c5501710ef12.gif)](https://gyazo.com/0f4ad400c9bd16feeea8c5501710ef12)|
 
 
 
