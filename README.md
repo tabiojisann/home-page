@@ -1,7 +1,7 @@
 # ホームページ制作サイト
 前略プロフィールを参考にしたホームページサイト
 
-https://my-home-page-in-heroku.herokuapp.com/　 (サイトのトップページ)
+https://my-home-page-in-heroku.herokuapp.com/　
 
 
 |トップページ|ユーザーページ|チャット画面|
