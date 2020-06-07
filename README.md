@@ -5,7 +5,7 @@ https://my-home-page-in-heroku.herokuapp.com/
 
 |トップページ|ユーザーページ|ブログ|
 |---|---|---|
-|[![Image from Gyazo](https://i.gyazo.com/6e11366029282ef47094f97acc8e2f0b.png)](https://gyazo.com/6e11366029282ef47094f97acc8e2f0b)|[![Image from Gyazo](https://i.gyazo.com/fbf44126796f1cb80ed8940c0b6f6c51.png)](https://gyazo.com/fbf44126796f1cb80ed8940c0b6f6c51)
+|[![Image from Gyazo](https://i.gyazo.com/6e11366029282ef47094f97acc8e2f0b.png)](https://gyazo.com/6e11366029282ef47094f97acc8e2f0b)|
 |ツイート|チャット|ログイン|
 
 
